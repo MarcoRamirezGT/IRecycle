@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#4CAF50</color>
     <color name="colorPrimaryDark">#388E3C</color>
-    <color name="colorAccent">#E040FB</color>
+    <color name="colorAccent">#4CAF50</color>
     <color name="themeColor">#4CAF50</color>
 
     <color name="darkTextColor">#020000</color>
@@ -11,5 +11,16 @@
     <color name="login_bk_color">#fff</color>
     <color name="whiteTextColor">#fff</color>
     <color name="primaryTextColor">#212121</color>
+
+
+
+    <color name="input_background_color">#F5F7FB</color>
+
+    <color name="primary_text_color">#D9000000</color>
+    <color name="secondary_text_color">#7C7B7B</color>
+    <color name="third_text_color">#E6252625</color>
+    <color name="primary_background_color">#FFFFFF</color>
+    <color name="secondary_background_color">#FFFFFF</color>
+    <color name="third_background_color">#f5f5f5</color>
 
 </resources>
