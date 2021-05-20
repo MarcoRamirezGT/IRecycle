@@ -1,145 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SabiasQueActivity">
-    <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/primary_background_color"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        tools:context=".SabiasQueActivity">
 
-        <RelativeLayout
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
+            android:layout_height="wrap_content"
+            android:background="@color/primary_background_color">
+            <RelativeLayout
+                android:id="@id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                tools:ignore="MissingConstraints">
 
-            <ImageView
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:padding="15dp"
+                    android:layout_centerVertical="true"
+                    android:onClick="onBackHomeSB"
+                    android:contentDescription="TODO" />
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_arrow_back_24"
-                android:padding="15dp"
-                android:layout_centerVertical="true"
-                android:onClick="onBackHomeSB"/>
-
-
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sabias QUÉ..."
-            android:textSize="30sp"
-            android:fontFamily="@font/poppins_regular"
-            android:textAllCaps="true"
-            android:padding="10dp"/>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
-
-            <TextView
-                android:layout_width="247dp"
-                android:layout_height="wrap_content"
+                android:text="Sabias qué..."
+                android:textSize="30sp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/plastico"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                tools:ignore="MissingConstraints" />
 
-                android:layout_alignParentRight="true"/>
 
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
 
-            <TextView
-                android:layout_width="247dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/plastico"
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
 
-                android:layout_alignParentRight="true"/>
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title">
 
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1">
 
-            <TextView
-                android:layout_width="247dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/plastico"
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/secondary_background_color">
 
-                android:layout_alignParentRight="true"/>
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
-
-            <TextView
-                android:layout_width="247dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/plastico"
-
-                android:layout_alignParentRight="true"/>
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
-
-            <TextView
-                android:layout_width="247dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/plastico"
-
-                android:layout_alignParentRight="true"/>
-
-        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
 
 
 
 
-    </LinearLayout>
 
-</ScrollView>
+                            android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
+                            android:textSize="14sp"
+                            app:fontFamily="@font/poppins_regular" />
 
+                        <ImageView
+                            android:id="@+id/plastico"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="0dp"
+
+
+                            android:layout_toEndOf="@+id/textView3"
+                            android:src="@drawable/plastico"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</layout>
