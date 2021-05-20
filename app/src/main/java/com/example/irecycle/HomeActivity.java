@@ -53,4 +53,16 @@ public class HomeActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+    public void onMateriales(View view){
+        startActivity(new Intent(this,MaterialesActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+    }
+    public void onSabiasQue(View view){
+        startActivity(new Intent(this,SabiasQueActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+    }
+    public void onVideos(View view){
+        startActivity(new Intent(this,VideosActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+    }
 }
