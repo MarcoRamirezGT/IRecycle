@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "73065893834",
+    "firebase_url": "https://irecycle-7151a-default-rtdb.firebaseio.com",
+    "project_id": "irecycle-7151a",
+    "storage_bucket": "irecycle-7151a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73065893834:android:29a38ed6ebdc273554c933",
+        "android_client_info": {
+          "package_name": "com.example.irecycle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73065893834-aologk8afugh1k1a0c1gljtttplor6bn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.irecycle",
+            "certificate_hash": "fa222aaf1ef1cd1d3a2f7cfdd89168765bc2df15"
+          }
+        },
+        {
+          "client_id": "73065893834-3q8a788jrv6o4eoe5mlssbgqpd9i7t9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT2P-0Wu8hpQEhgPWy5M9vBgf9z8Dy5Wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73065893834-3q8a788jrv6o4eoe5mlssbgqpd9i7t9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
