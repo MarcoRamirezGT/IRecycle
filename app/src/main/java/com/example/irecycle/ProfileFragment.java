@@ -127,6 +127,10 @@ public class ProfileFragment extends Fragment {
             }
         }
 
+        // GO BACK TO HOME FRAGMENT
+        binding.imageViewBack.setOnClickListener(view -> Navigation.findNavController(requireView())
+        .navigate(R.id.action_profile_fragment_to_home_fragment));
+
         // GO TO CHANGE AVATAR DIALOG
         binding.layoutProfile.setOnClickListener(view -> showChangeAvatarDialog());
 

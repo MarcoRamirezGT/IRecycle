@@ -11,7 +11,10 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_home_fragment_to_profile_fragment"
-            app:destination="@id/profile_fragment" />
+            app:destination="@id/profile_fragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in" />
     </fragment>
     <fragment
         android:id="@+id/profile_fragment"
@@ -19,16 +22,9 @@
         android:label="Perfil"
         tools:layout="@layout/fragment_profile">
         <action
-            android:id="@+id/action_profile_fragment_to_goals_fragment"
-            app:destination="@id/goals_fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/goals_fragment"
-        android:name="com.example.irecycle.GoalsFragment"
-        android:label="."
-        tools:layout="@layout/fragment_goals" >
-        <action
-            android:id="@+id/action_goals_fragment_to_profile_fragment"
-            app:destination="@id/profile_fragment" />
+            android:id="@+id/action_profile_fragment_to_home_fragment"
+            app:destination="@id/home_fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_in_left" />
     </fragment>
 </navigation>

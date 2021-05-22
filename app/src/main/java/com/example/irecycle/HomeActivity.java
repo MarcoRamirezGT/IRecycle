@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
             
-            if (destination.getId() == R.id.home_fragment) {
+            if (destination.getId() == R.id.home_fragment || destination.getId() == R.id.profile_fragment) {
                 toolbar.setVisibility(View.GONE);
             } else {
                 toolbar.setVisibility(View.VISIBLE);
