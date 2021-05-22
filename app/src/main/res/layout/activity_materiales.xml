@@ -12,7 +12,7 @@
         android:background="@color/primary_background_color"
         android:focusableInTouchMode="true"
         android:gravity="center"
-        tools:context=".HomeFragment">
+        tools:context=".MaterialesActivity">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
