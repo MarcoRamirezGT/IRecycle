@@ -58,6 +58,20 @@
         <item name="android:statusBarColor">@color/primary_background_color</item>
     </style>
 
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:background">@drawable/bottom_sheet_rounded</item>
+    </style>
+
     <style name="Toolbar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textSize">20sp</item>
     </style>

@@ -27,6 +27,15 @@
                 android:layout_centerVertical="true"
                 android:onClick="onBackHome"/>
 
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Tutoriales"
+                android:textColor="@color/primary_text_color"
+                android:textSize="20sp" />
+
 
         </RelativeLayout>
 
@@ -38,6 +47,7 @@
             android:layout_height="wrap_content"
             app:videoId="9MlKHAhuXlo"
             app:autoPlay="false"
+            android:layout_marginTop="30dp"
             app:showYouTubeButton="false"/>
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_marginBottom="15dp"

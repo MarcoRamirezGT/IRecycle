@@ -65,5 +65,8 @@ public class HomeFragment extends Fragment {
 
         binding.imageProfile.setOnClickListener(view -> Navigation.findNavController(requireView())
         .navigate(R.id.action_home_fragment_to_profile_fragment));
+
+        binding.layoutMaps.setOnClickListener(view -> Navigation.findNavController(requireView())
+        .navigate(R.id.action_home_fragment_to_mapsActivity));
     }
 }

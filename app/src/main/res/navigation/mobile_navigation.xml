@@ -15,6 +15,9 @@
             app:enterAnim="@anim/slide_in"
             app:exitAnim="@anim/fade_out"
             app:popEnterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_home_fragment_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
     </fragment>
     <fragment
         android:id="@+id/profile_fragment"
@@ -27,4 +30,9 @@
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_in_left" />
     </fragment>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.example.irecycle.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
 </navigation>

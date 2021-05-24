@@ -18,7 +18,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-<!--    LOGIN / REGISTER ACTIVITY-->
+    <!--    LOGIN / REGISTER ACTIVITY-->
     <string name="login_email_hint">Correo electrónico</string>
     <string name="login_password_hint">Contraseña</string>
     <string name="login_text">Ingresar</string>
@@ -49,6 +49,7 @@
     <string name="unable_to_update_username">Error en actualizar el nombre</string>
     <string name="unexpected_error_text">Error inesperado. Intentar de nuevo.</string>
     <string name="cancel_text">Cancelar</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

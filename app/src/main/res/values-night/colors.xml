@@ -20,7 +20,10 @@
     <color name="third_text_color">#DEFFFFFF</color>
     <color name="background_color">#000000</color>
     <color name="primary_background_color">#181824</color>
+<!--    <color name="primary_background_color">#191932</color>-->
     <color name="secondary_background_color">#252A34</color>
+<!--    <color name="secondary_background_color">#23243B</color>-->
     <color name="third_background_color">#2d2d2d</color>
+
 
 </resources>

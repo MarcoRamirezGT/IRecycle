@@ -34,16 +34,16 @@
 
                     <ImageView
                         android:id="@+id/imageLogo"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="40dp"
                         android:adjustViewBounds="true"
                         android:maxWidth="100dp"
                         android:maxHeight="100dp"
                         android:scaleType="fitCenter"
-                        android:layout_marginBottom="40dp"
                         android:src="@drawable/earthlogo" />
 
                     <TextView
@@ -91,18 +91,28 @@
                         android:textSize="14sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/buttonLogin"
-                    style="@style/loginButton"
+                    android:layout_width="240dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="30dp"
-                    android:layout_width="240dp"
-                    android:onClick="onHomeClick"
-                    android:text="@string/login_text"
-                    app:initialCornerAngle="27dp"
-                    app:spinning_bar_color="#FFF"
-                    app:spinning_bar_padding="6dp"
-                    app:spinning_bar_width="4dp" />
+                    android:background="@drawable/field_green_background_design"
+                    android:onClick="onHomeClick">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="INGRESAR"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
                     style="@style/parent"
@@ -110,7 +120,7 @@
                     android:onClick="onLoginClick"
                     android:text="¿Usuario nuevo? Registrarse ahora"
                     android:textAlignment="center"
-                    android:textColor="@color/primary_text_color"
+                    android:textColor="@color/secondary_text_color"
                     android:textSize="17sp" />
 
                 <LinearLayout
@@ -127,14 +137,13 @@
                         android:background="@color/colorPrimaryDark" />
 
                     <TextView
-                        style="@style/viewParent.headerText.NoMode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="6"
                         android:text="Usar otro método"
                         android:textAlignment="center"
-                        android:textColor="@color/primary_text_color"
-                        android:textSize="14sp" />
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="16sp" />
 
                     <View
                         android:layout_width="0dp"

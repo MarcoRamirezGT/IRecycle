@@ -29,8 +29,8 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/imageProfile"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_marginStart="16dp"
                     android:contentDescription="@string/icon_description_text"
                     android:src="@drawable/profile"
@@ -168,6 +168,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layoutMaps"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@color/secondary_background_color">
@@ -181,7 +182,6 @@
                             android:layout_marginTop="16dp"
                             android:autoSizeMaxTextSize="30sp"
                             android:autoSizeMinTextSize="13sp"
-
                             android:autoSizeStepGranularity="2sp"
                             android:autoSizeTextType="uniform"
                             android:text="Centros de Reciclaje"

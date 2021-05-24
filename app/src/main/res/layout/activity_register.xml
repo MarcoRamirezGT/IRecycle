@@ -31,16 +31,16 @@
 
                     <ImageView
                         android:id="@+id/imageLogo"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="40dp"
                         android:adjustViewBounds="true"
                         android:maxWidth="100dp"
                         android:maxHeight="100dp"
                         android:scaleType="fitCenter"
-                        android:layout_marginBottom="40dp"
                         android:src="@drawable/earthlogo" />
 
                     <TextView
@@ -152,14 +152,13 @@
                         android:background="@color/whiteTextColor" />
 
                     <TextView
-                        style="@style/viewParent.headerText.NoMode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="6"
                         android:text="Usar otro método"
                         android:textAlignment="center"
                         android:textColor="@color/whiteTextColor"
-                        android:textSize="14sp" />
+                        android:textSize="16sp" />
 
                     <View
                         android:layout_width="0dp"

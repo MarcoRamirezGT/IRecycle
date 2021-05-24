@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,15 +7,18 @@
     android:layout_height="match_parent"
     android:background="@color/primary_background_color"
     tools:context=".SabiasQueActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
+            android:layout_height="?actionBarSize"
+            android:id="@+id/toolbar">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -24,118 +28,182 @@
                 android:layout_centerVertical="true"
                 android:onClick="onBackHomeSB"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Sabias qué..."
+                android:textSize="20sp" />
+
 
         </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sabias QUÉ..."
-            android:textSize="30sp"
-            android:fontFamily="@font/poppins_regular"
-            android:textAllCaps="true"
-            android:padding="10dp"/>
-
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sabias_que_background_design"
+            android:layout_marginBottom="16dp">
 
             <TextView
-                android:layout_width="247dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/poppins_regular"
                 android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageSabiasque"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:id="@+id/imageSabiasque"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="16dp"
                 android:src="@drawable/plastico"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                android:layout_alignParentRight="true"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </RelativeLayout>
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
+            android:background="@drawable/sabias_que_background_design"
+            android:layout_marginBottom="16dp">
 
             <TextView
-                android:layout_width="247dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/poppins_regular"
                 android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:id="@+id/imageView"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
                 android:src="@drawable/plastico"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                android:layout_alignParentRight="true"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </RelativeLayout>
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
+            android:background="@drawable/sabias_que_background_design"
+            android:layout_marginBottom="16dp">
 
             <TextView
-                android:layout_width="247dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/poppins_regular"
                 android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageSabiasque3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:id="@+id/imageSabiasque3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="16dp"
                 android:src="@drawable/plastico"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                android:layout_alignParentRight="true"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </RelativeLayout>
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
+            android:background="@drawable/sabias_que_background_design"
+            android:layout_marginBottom="16dp">
 
             <TextView
-                android:layout_width="247dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/poppins_regular"
                 android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:id="@+id/imageView4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
                 android:src="@drawable/plastico"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                android:layout_alignParentRight="true"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </RelativeLayout>
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@color/colorPrimary"
-            android:layout_marginBottom="15dp">
+            android:background="@drawable/sabias_que_background_design"
+            android:layout_marginBottom="16dp">
 
             <TextView
-                android:layout_width="247dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/poppins_regular"
                 android:text="Con la energía ahorrada por el material reciclado en España desde 1998 a 2018, se podría mantener una bombilla de 60w encendida durante más de 73 millones de años."
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageSabiasque5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:id="@+id/imageSabiasque5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginEnd="16dp"
                 android:src="@drawable/plastico"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                android:layout_alignParentRight="true"/>
-
-        </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
