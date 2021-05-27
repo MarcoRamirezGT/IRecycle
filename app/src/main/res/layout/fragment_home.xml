@@ -171,7 +171,8 @@
                         android:id="@+id/layoutMaps"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/secondary_background_color">
+                        android:background="@color/secondary_background_color"
+                        android:onClick="onMaps">
 
                         <TextView
                             android:id="@+id/textView4"

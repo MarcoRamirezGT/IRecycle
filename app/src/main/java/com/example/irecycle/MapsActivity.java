@@ -54,7 +54,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 openMarker(marker.getTitle());
 
-                return false;
+                return true;
             }
         });
     }
@@ -63,15 +63,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         Log.d("Edman", title);
 
-//        switch (title) {
-//            case "Universidad del Valle de Guatemala":
-//                final BottomSheetMap bottomSheetMap = new BottomSheetMap(this, title, "18 Avenida 11-95 Guatemala, 01015", "7am - 9pm");
-//                bottomSheetMap.startChangePriorityBottomSheet();
-//                break;
-//            case "Colonia San Lázaro":
-//                final BottomSheetMap bottomSheetMap2 = new BottomSheetMap(this, title, "29 Avenida 5-31, Cdad. de Guatemala", "7am - 6pm");
-//                bottomSheetMap2.startChangePriorityBottomSheet();
-//        }
+
 
         if (title.equalsIgnoreCase("Universidad del Valle de Guatemala")) {
             final BottomSheetMap bottomSheetMap = new BottomSheetMap(this, title, "18 Avenida 11-95 Guatemala, 01015", "7am - 9pm");

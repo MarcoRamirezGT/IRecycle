@@ -21,12 +21,15 @@ import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.irecycle.databinding.FragmentProfileBinding;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -137,6 +140,8 @@ public class ProfileFragment extends Fragment {
         // GO TO CHANGE NAME DIALOG
         binding.layoutName.setOnClickListener(view -> showChangeNameDialog());
 
+        binding.layoutPassword.setOnClickListener(view -> showResetPasswordDialog());
+
         // CHANGE DARK THEME CODE
         binding.switchTheme.setOnCheckedChangeListener((compoundButton, isChecked) -> {
             if (isChecked) {
@@ -231,7 +236,7 @@ public class ProfileFragment extends Fragment {
                 pickImageFromGallery();
             } else {
                 // Permission was denied
-                Toast.makeText(getContext(), "Permission denied...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Permiso denegado...", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -274,7 +279,7 @@ public class ProfileFragment extends Fragment {
 
         reference.putBytes(baos.toByteArray())
                 .addOnSuccessListener(taskSnapshot -> getDownloadUrl(reference))
-                .addOnFailureListener(e -> Toast.makeText(getContext(), "Failed to get image", Toast.LENGTH_SHORT).show());
+                .addOnFailureListener(e -> Toast.makeText(getContext(), "Error al cargar la imagen", Toast.LENGTH_SHORT).show());
     }
 
     private void getDownloadUrl(StorageReference reference) {
@@ -292,9 +297,9 @@ public class ProfileFragment extends Fragment {
         if (user != null) {
             user.updateProfile(request)
                     .addOnSuccessListener(aVoid -> {
-                        Toast.makeText(getContext(), "UPdated ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Foto fue actualizado exitosamente ", Toast.LENGTH_SHORT).show();
                     })
-                    .addOnFailureListener(e -> Toast.makeText(getContext(), "Failed to upload image", Toast.LENGTH_SHORT).show());
+                    .addOnFailureListener(e -> Toast.makeText(getContext(), "Error al actualizar la foto", Toast.LENGTH_SHORT).show());
         }
     }
 
@@ -332,6 +337,56 @@ public class ProfileFragment extends Fragment {
             dialog.dismiss();
         });
     }
+
+
+    private void showResetPasswordDialog() {
+        AlertDialog.Builder switchViewDialog = new AlertDialog.Builder(getContext());
+
+        LayoutInflater inflater = LayoutInflater.from(getContext());
+
+        View view = inflater.inflate(R.layout.dialog_change_password, null);
+
+        switchViewDialog.setView(view);
+
+        final AlertDialog dialog = switchViewDialog.create();
+
+        dialog.setCancelable(true);
+        dialog.show();
+
+        TextView textViewAsk = view.findViewById(R.id.textViewAsk);
+        TextView textViewSent = view.findViewById(R.id.textViewSent);
+        Button buttonClose = view.findViewById(R.id.buttonClose);
+        Button buttonCancel = view.findViewById(R.id.buttonCancel);
+        Button buttonOk = view.findViewById(R.id.buttonOk);
+
+        // CANCEL AND CLOSE DIALOG
+        view.findViewById(R.id.buttonCancel).setOnClickListener(view1 -> dialog.dismiss());
+
+        // RESET PASSWORD
+        buttonOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().sendPasswordResetEmail(mUser.getEmail())
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                textViewAsk.setVisibility(View.GONE);
+                                textViewSent.setVisibility(View.VISIBLE);
+
+                                buttonCancel.setVisibility(View.GONE);
+                                buttonOk.setVisibility(View.GONE);
+
+                                buttonClose.setVisibility(View.VISIBLE);
+                            }
+                        });
+            }
+        });
+
+
+        buttonClose.setOnClickListener(view2 -> dialog.dismiss());
+
+    }
+
 
     public void updateProfile(final View view) {
 

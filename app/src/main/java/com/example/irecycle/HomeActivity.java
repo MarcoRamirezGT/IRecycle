@@ -68,4 +68,9 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(new Intent(this,VideosActivity.class));
         overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
     }
+
+    public void onMaps(View view){
+        startActivity(new Intent(this, MapsActivity.class));
+        overridePendingTransition(R.anim.slide_in_right,R.anim.stay);
+    }
 }
