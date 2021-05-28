@@ -47,6 +47,36 @@ public class SabiasQueActivity extends AppCompatActivity {
             startActivity(browserIntent);
         });
 
+        binding.layoutSabias6.setOnClickListener(view6 -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.temasambientales.com/2017/03/curiosidades-medio-ambiente.html"));
+            startActivity(browserIntent);
+        });
+
+        binding.layoutSabias7.setOnClickListener(view7 -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.temasambientales.com/2017/03/curiosidades-medio-ambiente.html"));
+            startActivity(browserIntent);
+        });
+
+        binding.layoutSabias8.setOnClickListener(view8 -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.temasambientales.com/2017/03/curiosidades-medio-ambiente.html"));
+            startActivity(browserIntent);
+        });
+
+        binding.layoutSabias9.setOnClickListener(view9 -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.temasambientales.com/2017/03/curiosidades-medio-ambiente.html"));
+            startActivity(browserIntent);
+        });
+
+        binding.layoutSabias10.setOnClickListener(view10 -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.temasambientales.com/2017/03/curiosidades-medio-ambiente.html"));
+            startActivity(browserIntent);
+        });
+
+        binding.layoutSabias11.setOnClickListener(view11 -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.temasambientales.com/2017/03/curiosidades-medio-ambiente.html"));
+            startActivity(browserIntent);
+        });
+
     }
 
 
