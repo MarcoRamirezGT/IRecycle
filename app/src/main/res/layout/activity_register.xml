@@ -155,7 +155,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="6"
-                        android:text="Usar otro método"
                         android:textAlignment="center"
                         android:textColor="@color/whiteTextColor"
                         android:textSize="16sp" />
@@ -182,7 +181,8 @@
                         android:maxWidth="41dp"
                         android:maxHeight="41dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/google_icon_130924" />
+                        android:src="@drawable/google_icon_130924"
+                        android:visibility="gone" />
 
                 </LinearLayout>
             </LinearLayout>

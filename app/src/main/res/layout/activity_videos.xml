@@ -49,25 +49,117 @@
             app:autoPlay="false"
             android:layout_marginTop="30dp"
             app:showYouTubeButton="false"/>
+
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:videoId="9MlKHAhuXlo"
+            app:videoId="WNTISyvbd24"
             app:autoPlay="false"
             app:showYouTubeButton="false"/>
+
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:videoId="9MlKHAhuXlo"
+            app:videoId="2l6WtDr97R4"
             app:autoPlay="false"
             app:showYouTubeButton="false"/>
+
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:videoId="9MlKHAhuXlo"
+            app:videoId="f54jd-4uv9s"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="WPwB7Rf2-N8"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="xCaI-5WVRlY"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="2Xh9n62OpSQ"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="K5p2Z91HVec"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="0v5CuqWVASQ"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="aDiDo5nmJpU"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="vmd8MeOMGGI"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="5mVtvwdqIH4"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="TsrHBTMVOpk"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="vICswvJa-Ko"
+            app:autoPlay="false"
+            app:showYouTubeButton="false"/>
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:videoId="PFl44fBRi2w"
             app:autoPlay="false"
             app:showYouTubeButton="false"/>
 

@@ -140,7 +140,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="6"
-                        android:text="Usar otro método"
                         android:textAlignment="center"
                         android:textColor="@color/secondary_text_color"
                         android:textSize="16sp" />
@@ -156,18 +155,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:maxWidth="41dp"
-                        android:maxHeight="41dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/google_icon_130924" />
-
-                </LinearLayout>
+                    android:gravity="center"/>
 
             </LinearLayout>
         </ScrollView>
