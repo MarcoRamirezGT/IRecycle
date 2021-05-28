@@ -52,4 +52,25 @@
     <string name="title_activity_maps">Map</string>
 
 
+    <!--    MATERIALES-->
+    <string name="reciclaje_mecanico">
+        <b>Reciclaje mecánico:</b>
+        Consta de convertir el material en pequeñas unidades para posteriormente crear nuevos productos. </string>
+    <string name="reciclaje_quimico">
+        <b>Reciclaje químico: </b>
+        Se realiza por medio de la degradación del plástico usando calor o catalizadores para romper las macromoléculas y dar como resultados moléculas más simples.
+    </string>
+
+    <string name="recoleccion_separacion">
+        <b>Recoleccion y separacion: </b> El vidrio es recolectado de personas y empresas y se agrupan por color.
+    </string>
+    <string name="limpieza">
+        <b>Limpieza: </b> Se trata con productos químicos y aguas para eliminar suciedad y eliminar elementos de papel y otros residuos.
+    </string>
+
+    <string name="triturado">
+        <b>Triturado: </b> El vidrio es triturado y derretido nuevamente. Los residuos llamados calcin son calentados a 1600 grados con una mezcla hidróxido de sodio y caliza para crear nuevos productos.
+    </string>
+
+
 </resources>

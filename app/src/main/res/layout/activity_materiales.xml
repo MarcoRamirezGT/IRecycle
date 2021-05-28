@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/primary_background_color">
+
             <RelativeLayout
                 android:id="@id/toolbar"
                 android:layout_width="match_parent"
@@ -28,10 +28,12 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_arrow_back_24"
-                    android:padding="15dp"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:onClick="onBackHome"/>
+                    android:layout_marginStart="0dp"
+                    android:onClick="onBackHome"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_baseline_arrow_back_24" />
 
                 <TextView
                     android:id="@id/title"
@@ -39,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Materiales"
+                    android:text="Materiales reciclables"
                     android:textColor="@color/primary_text_color"
                     android:textSize="20sp" />
 
@@ -59,11 +61,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardPlasticos"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     app:cardCornerRadius="6dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:onClick="onPlasticos">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -78,7 +82,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:textSize="15sp"
-                            android:text="¿Sabías qué?"
+                            android:text="Plásticos"
                             app:fontFamily="@font/poppins_regular" />
 
                         <ImageView
@@ -87,7 +91,7 @@
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
-                            app:srcCompat="@drawable/plastico" />
+                            app:srcCompat="@drawable/plasticos" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -96,7 +100,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     app:cardCornerRadius="6dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:onClick="onPapel">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -111,7 +116,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
                             android:textSize="15sp"
-                            android:text="Cartón"
+                            android:text="Papel"
                             app:fontFamily="@font/poppins_regular" />
 
                         <ImageView
@@ -120,7 +125,7 @@
                             android:layout_height="80dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="10dp"
-                            app:srcCompat="@drawable/plastico" />
+                            app:srcCompat="@drawable/cajas" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -142,7 +147,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     app:cardCornerRadius="6dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:onClick="onVidrio">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -158,7 +164,7 @@
                             android:layout_marginTop="10dp"
                             android:textSize="15sp"
 
-                            android:text="Coca Cola"
+                            android:text="Vidrio"
                             app:fontFamily="@font/poppins_regular" />
 
                         <ImageView
@@ -167,7 +173,7 @@
                             android:layout_height="75dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            app:srcCompat="@drawable/plastico" />
+                            app:srcCompat="@drawable/tipo" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -176,7 +182,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     app:cardCornerRadius="6dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:onClick="onLatas">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -201,7 +208,7 @@
                             android:layout_height="75dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            app:srcCompat="@drawable/plastico" />
+                            app:srcCompat="@drawable/latas" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
@@ -223,7 +230,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     app:cardCornerRadius="6dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:onClick="onTetra">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -239,7 +247,7 @@
                             android:layout_marginTop="10dp"
                             android:textSize="15sp"
 
-                            android:text="Coca Cola"
+                            android:text="Tetra Pak"
                             app:fontFamily="@font/poppins_regular" />
 
                         <ImageView
@@ -248,7 +256,7 @@
                             android:layout_height="75dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            app:srcCompat="@drawable/plastico" />
+                            app:srcCompat="@drawable/tetra" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -257,7 +265,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     app:cardCornerRadius="6dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:onClick="onElectronicos">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -273,7 +282,7 @@
                             android:layout_marginTop="10dp"
                             android:textSize="15sp"
 
-                            android:text="Latas"
+                            android:text="Electrónicos"
                             app:fontFamily="@font/poppins_regular" />
 
                         <ImageView
@@ -282,7 +291,7 @@
                             android:layout_height="75dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="15dp"
-                            app:srcCompat="@drawable/plastico" />
+                            app:srcCompat="@drawable/electronicos" />
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
