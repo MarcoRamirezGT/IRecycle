@@ -89,10 +89,11 @@
             android:fontFamily="sans-serif-medium"
             android:text="Métodos para el reciclaje de los desechos  electrónicos"
             android:textColor="@color/primary_text_color"
-            android:textSize="16sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:lineHeight="23dp" />
 
         <TextView
             android:id="@+id/textView21"
@@ -145,7 +146,8 @@
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:lineHeight="25dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

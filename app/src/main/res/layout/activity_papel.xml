@@ -89,17 +89,18 @@
             android:fontFamily="sans-serif-medium"
             android:text="El ciclo del reciclado del papel "
             android:textColor="@color/primary_text_color"
-            android:textSize="16sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:lineHeight="25dp" />
 
         <TextView
             android:id="@+id/textView21"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:text="Selección y clasificación según la calidad del recurso."
             android:textSize="16sp"
@@ -113,7 +114,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:text="Luego es compactado en grandes cubos."
             android:textSize="16sp"
@@ -128,7 +129,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:text="Los cubos son procesados industrialmente con una máquina especial llamada pulper. En esta máquina se muele y corta en pequeños fragmentos para generar así una pasta. "
             android:textSize="16sp"
@@ -142,26 +143,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:text="La pasta pasa por un proceso de limpieza para quitar impurezas."
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:lineHeight="25dp" />
 
         <TextView
             android:id="@+id/textView25"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             android:text="Finalmente la pasta pasa a una máquina que se encarga de fabricar láminas de papel."
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:lineHeight="25dp" />
 
         <Button
             android:id="@+id/buttonReading"
